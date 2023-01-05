@@ -106,6 +106,7 @@ void blinkLedStatus(bool opt, bool percent, float value) // opt == 0 charging, o
   {
     if (opt)
     {
+      strip.clear();
       strip.setPixelColor(0, strip.Color(0, 150, 0));
       strip.show();
       strip.setPixelColor(4, strip.Color(0, 150, 0));
@@ -117,6 +118,7 @@ void blinkLedStatus(bool opt, bool percent, float value) // opt == 0 charging, o
     }
     else
     {
+      strip.clear();
       strip.setPixelColor(0, strip.Color(150, 0, 0));
       strip.show();
       strip.setPixelColor(4, strip.Color(150, 0, 0));
@@ -168,7 +170,6 @@ void blink()
     ledsOFF = false;
   }
   stopwatchTrigger = true;
-  delay(1500);
 }
 
 void enableLED(int color)
@@ -240,6 +241,7 @@ void loop()
       blinkLedStatus(false, true, getBatteryVoltage());
       delay(2500);
       showLedStatusOnStart = false;
+      strip.clear();
     }
     if (getBatteryVoltage() >= 3.5)
     {
