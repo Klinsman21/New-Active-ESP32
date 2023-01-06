@@ -106,6 +106,12 @@ void blinkLedStatus(bool opt, bool percent, float value) // opt == 0 charging, o
   {
     if (opt)
     {
+      // for (size_t i = 0; i < LedNumber + 1; i++)
+      // {
+      //   strip.setPixelColor(i, strip.Color(0, 0, 0));
+      //   strip.show();
+      // }
+
       strip.clear();
       strip.setPixelColor(0, strip.Color(0, 150, 0));
       strip.show();
@@ -118,6 +124,11 @@ void blinkLedStatus(bool opt, bool percent, float value) // opt == 0 charging, o
     }
     else
     {
+      // for (size_t i = 0; i < LedNumber + 1; i++)
+      // {
+      //   strip.setPixelColor(i, strip.Color(0, 0, 0));
+      //   strip.show();
+      // }
       strip.clear();
       strip.setPixelColor(0, strip.Color(150, 0, 0));
       strip.show();
