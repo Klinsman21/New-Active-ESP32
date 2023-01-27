@@ -4,7 +4,7 @@
 #define LedStripPin 32
 #define potTime 33
 #define LedNumber 30
-#define maxDelay 30000    // set stopwatch time
+#define maxDelay 25000    // set stopwatch time
 #define lightOnDelay 2000 // time all LEDs are on
 
 #define vSensorPin 34
@@ -107,15 +107,7 @@ void blinkLedStatus(bool opt, bool percent, float value) // opt == 0 charging, o
     if (opt)
     {
       // enableLED(2);
-      strip.clear();
-      strip.setPixelColor(0, strip.Color(0, 100, 0));
-      strip.show();
-      strip.setPixelColor(4, strip.Color(0, 100, 0));
-      strip.show();
-      strip.setPixelColor(25, strip.Color(0, 100, 0));
-      strip.show();
-      strip.setPixelColor(29, strip.Color(0, 100, 0));
-      strip.show();
+
 
       // strip.clear();
       // strip.setPixelColor(0, strip.Color(0, 100, 0));
@@ -148,15 +140,15 @@ void blinkLedStatus(bool opt, bool percent, float value) // opt == 0 charging, o
     else
     {
       // enableLED(1);
-      strip.clear();
+      // strip.clear();
       // strip.setPixelColor(0, strip.Color(255, 0, 0));
       // strip.show();
       // strip.setPixelColor(4, strip.Color(255, 0, 0));
       // strip.show();
       // strip.setPixelColor(25, strip.Color(255, 0, 0));
       // strip.show();
-      strip.setPixelColor(29, strip.Color(100, 0, 0));
-      strip.show();
+      // strip.setPixelColor(29, strip.Color(100, 0, 0));
+      // strip.show();
 
       // strip.clear();
       // strip.setPixelColor(0, strip.Color(100, 0, 0));
