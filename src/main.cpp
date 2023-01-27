@@ -106,6 +106,7 @@ void blinkLedStatus(bool opt, bool percent, float value) // opt == 0 charging, o
   {
     if (opt)
     {
+      enableLED(2);
       // strip.clear();
       // strip.setPixelColor(0, strip.Color(0, 255, 0));
       // strip.show();
@@ -116,36 +117,37 @@ void blinkLedStatus(bool opt, bool percent, float value) // opt == 0 charging, o
       // strip.setPixelColor(29, strip.Color(0, 255, 0));
       // strip.show();
 
-      strip.clear();
-      strip.setPixelColor(0, strip.Color(0, 100, 0));
-      strip.show();
-      strip.setPixelColor(1, strip.Color(0, 100, 0));
-      strip.show();
-      strip.setPixelColor(5, strip.Color(0, 100, 0));
-      strip.show();
-      strip.setPixelColor(3, strip.Color(0, 100, 0));
-      strip.show();
-      strip.setPixelColor(4, strip.Color(0, 100, 0));
-      strip.show();
-      strip.setPixelColor(9, strip.Color(0, 100, 0));
-      strip.show();
-      strip.setPixelColor(24, strip.Color(0, 100, 0));
-      strip.show();
-      strip.setPixelColor(29, strip.Color(0, 100, 0));
-      strip.show();
-      strip.setPixelColor(24, strip.Color(0, 100, 0));
-      strip.show();
-      strip.setPixelColor(28, strip.Color(0, 100, 0));
-      strip.show();
-      strip.setPixelColor(26, strip.Color(0, 100, 0));
-      strip.show();
-      strip.setPixelColor(25, strip.Color(0, 100, 0));
-      strip.show();
-      strip.setPixelColor(20, strip.Color(0, 100, 0));
-      strip.show();
+      // strip.clear();
+      // strip.setPixelColor(0, strip.Color(0, 100, 0));
+      // strip.show();
+      // strip.setPixelColor(1, strip.Color(0, 100, 0));
+      // strip.show();
+      // strip.setPixelColor(5, strip.Color(0, 100, 0));
+      // strip.show();
+      // strip.setPixelColor(3, strip.Color(0, 100, 0));
+      // strip.show();
+      // strip.setPixelColor(4, strip.Color(0, 100, 0));
+      // strip.show();
+      // strip.setPixelColor(9, strip.Color(0, 100, 0));
+      // strip.show();
+      // strip.setPixelColor(24, strip.Color(0, 100, 0));
+      // strip.show();
+      // strip.setPixelColor(29, strip.Color(0, 100, 0));
+      // strip.show();
+      // strip.setPixelColor(24, strip.Color(0, 100, 0));
+      // strip.show();
+      // strip.setPixelColor(28, strip.Color(0, 100, 0));
+      // strip.show();
+      // strip.setPixelColor(26, strip.Color(0, 100, 0));
+      // strip.show();
+      // strip.setPixelColor(25, strip.Color(0, 100, 0));
+      // strip.show();
+      // strip.setPixelColor(20, strip.Color(0, 100, 0));
+      // strip.show();
     }
     else
     {
+      enableLED(1);
       // strip.clear();
       // strip.setPixelColor(0, strip.Color(255, 0, 0));
       // strip.show();
@@ -156,33 +158,33 @@ void blinkLedStatus(bool opt, bool percent, float value) // opt == 0 charging, o
       // strip.setPixelColor(29, strip.Color(255, 0, 0));
       // strip.show();
 
-      strip.clear();
-      strip.setPixelColor(0, strip.Color(100, 0, 0));
-      strip.show();
-      strip.setPixelColor(1, strip.Color(100, 0, 0));
-      strip.show();
-      strip.setPixelColor(5, strip.Color(100, 0, 0));
-      strip.show();
-      strip.setPixelColor(3, strip.Color(100, 0, 0));
-      strip.show();
-      strip.setPixelColor(4, strip.Color(100, 0, 0));
-      strip.show();
-      strip.setPixelColor(9, strip.Color(100, 0, 0));
-      strip.show();
-      strip.setPixelColor(24, strip.Color(100, 0, 0));
-      strip.show();
-      strip.setPixelColor(29, strip.Color(100, 0, 0));
-      strip.show();
-      strip.setPixelColor(24, strip.Color(100, 0, 0));
-      strip.show();
-      strip.setPixelColor(28, strip.Color(100, 0, 0));
-      strip.show();
-      strip.setPixelColor(26, strip.Color(100, 0, 0));
-      strip.show();
-      strip.setPixelColor(25, strip.Color(100, 0, 0));
-      strip.show();
-      strip.setPixelColor(20, strip.Color(100, 0, 0));
-      strip.show();
+      // strip.clear();
+      // strip.setPixelColor(0, strip.Color(100, 0, 0));
+      // strip.show();
+      // strip.setPixelColor(1, strip.Color(100, 0, 0));
+      // strip.show();
+      // strip.setPixelColor(5, strip.Color(100, 0, 0));
+      // strip.show();
+      // strip.setPixelColor(3, strip.Color(100, 0, 0));
+      // strip.show();
+      // strip.setPixelColor(4, strip.Color(100, 0, 0));
+      // strip.show();
+      // strip.setPixelColor(9, strip.Color(100, 0, 0));
+      // strip.show();
+      // strip.setPixelColor(24, strip.Color(100, 0, 0));
+      // strip.show();
+      // strip.setPixelColor(29, strip.Color(100, 0, 0));
+      // strip.show();
+      // strip.setPixelColor(24, strip.Color(100, 0, 0));
+      // strip.show();
+      // strip.setPixelColor(28, strip.Color(100, 0, 0));
+      // strip.show();
+      // strip.setPixelColor(26, strip.Color(100, 0, 0));
+      // strip.show();
+      // strip.setPixelColor(25, strip.Color(100, 0, 0));
+      // strip.show();
+      // strip.setPixelColor(20, strip.Color(100, 0, 0));
+      // strip.show();
     }
   }
 }
