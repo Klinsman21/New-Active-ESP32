@@ -106,7 +106,7 @@ void blinkLedStatus(bool opt, bool percent, float value) // opt == 0 charging, o
   {
     if (opt)
     {
-      enableLED(2);
+      // enableLED(2);
       // strip.clear();
       // strip.setPixelColor(0, strip.Color(0, 255, 0));
       // strip.show();
@@ -147,7 +147,7 @@ void blinkLedStatus(bool opt, bool percent, float value) // opt == 0 charging, o
     }
     else
     {
-      enableLED(1);
+      // enableLED(1);
       // strip.clear();
       // strip.setPixelColor(0, strip.Color(255, 0, 0));
       // strip.show();
